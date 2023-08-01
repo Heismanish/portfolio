@@ -19,18 +19,18 @@ export default function () {
 	return (
 		<div
 			id="about"
-			className="grid shrink h-auto sm:h-screen max-w-[80%] mx-auto "
+			className="grid shrink  h-auto w-[95%] md:w-[85%] sm:h-screen max-w-[80%] mx-auto "
 		>
 			{/* introduction section */}
 			<blockquote className=" flex flex-col justify-between max-w-2xl mx-auto mb-1 text-gray-500  dark:text-gray-400">
-				<h3 className="text-2xl lg:text-4xl  font-medium lg:font-[500] text-gray-700 dark:text-white text-center">
+				<h3 className="text-2xl my-2  lg:text-4xl  font-medium lg:font-[500] text-gray-700 dark:text-gray-500 text-center">
 					About Me{" "}
 				</h3>
-				<p className="mb-4 text-center">
+				<p className="mb-6 text-center">
 					I'm a MERN stack web developer with a passion for open source. Let's
 					create something extraordinary together!{" "}
 				</p>
-				<h1 className="text-4xl text-gray-800 dark:text-white text-center font-semibold bg-gradient-to-r from-gray-300 to-gray-950 bg-clip-text text-transparent ">
+				<h1 className="text-4xl mb-4   text-gray-800 dark:text-white text-center font-semibold bg-gradient-to-r from-gray-300 to-gray-950 bg-clip-text text-transparent ">
 					{" "}
 					My Tech Stack
 				</h1>

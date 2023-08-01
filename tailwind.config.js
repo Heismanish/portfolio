@@ -6,6 +6,7 @@ export default {
 			gridTemplateColumns: {
 				// Complex site-specific row configuration
 				"hero-layout": "80px repeat(2, 1fr ) ",
+				"project-layout": "repeat(3, 1fr ) ",
 			},
 			// gridTemplateColumns: {
 			// 	// Complex site-specific row configuration
@@ -14,12 +15,15 @@ export default {
 			gridTemplateRows: {
 				// Complex site-specific row configuration
 				"hero-layout-mobile-row": " 1fr minmax(0,1fr) 1rem ",
+				"project-row": "1fr 1fr",
 			},
+
 			backgroundImage: {
 				"home-pfp": "url('./src/assets/profilePic.jpg')",
 			},
 			boxShadow: {
 				pfp: "inset 0 0 0 9px rgb(255, 255,255, 0.3)",
+				pfpDark: "inset 0 0 0 9px rgb(55, 55,55, 0.3)",
 			},
 			animation: {
 				profile__animate: "profile__animate 8s ease-in-out infinite 0.1s",

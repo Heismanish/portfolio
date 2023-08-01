@@ -12,20 +12,20 @@ export default function Hero() {
 	return (
 		<div
 			id="#"
-			className="flex gap-16 h-screen w-[95%] md:w-[85%] max-w-screen-2xl  mx-auto relative "
+			className="flex gap-16  lg:mt-0 h-screen w-[95%] md:w-[85%] max-w-screen-2xl  mx-auto relative "
 		>
 			<div className="grid lg:grid-cols-hero-layout gap-4 lg:gap-12 grid-cols-1 ">
-				{/* Socials */}
+				{/* Socials - desktop */}
 				<div className=" hidden lg:flex order-last lg:order-first lg:flex-col lg:gap-6 self-center justify-evenly ">
-					<VscGithub className="text-2xl text-gray-700 hover:text-gray-900"></VscGithub>
-					<VscTwitter className="text-2xl text-gray-700 hover:text-gray-900"></VscTwitter>
-					<SiLinkedin className="text-2xl text-gray-700 hover:text-gray-900"></SiLinkedin>
+					<VscGithub className="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"></VscGithub>
+					<VscTwitter className="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"></VscTwitter>
+					<SiLinkedin className="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"></SiLinkedin>
 				</div>
 				{/* heading */}
 				<div className="flex flex-col lg:items-start items-center shrink gap-12 lg:self-center pr-6  order-2 ">
 					<div className=" ">
 						<h1 className="font-[500] text-[#303030] lg:text-5xl text-3xl mb-1.5">
-							<span className="mr-2 drop-shadow-lg bg-gradient-to-r from-gray-600 to-gray-950 bg-clip-text text-transparent">
+							<span className="mr-2 drop-shadow-lg bg-gradient-to-r from-gray-600 to-gray-950 dark:bg-gradient-to-r dark:from-gray-400 dark:to-gray-200 bg-clip-text text-transparent">
 								Manish Gupta
 							</span>
 							<svg
@@ -80,14 +80,14 @@ export default function Hero() {
 							</svg>
 						</h1>
 						<div className="lg:text-3xl text-xl text-gray-500">
-							<TfiLayoutLineSolid className="-translate-y-0.65 hidden mr-2 lg:inline-block"></TfiLayoutLineSolid>
-							<span className="text-lg text-gray-500">
+							<TfiLayoutLineSolid className="translate-y-0.5 hidden mr-2 lg:inline-block"></TfiLayoutLineSolid>
+							<span className="text-lg  text-gray-500 dark:text-gray-400">
 								A Fullstack Web Developer
 							</span>
 						</div>
 					</div>
 					{/* Subtitles    */}
-					<div className=" flex flex-col lg:items-start items-center text-gray-600">
+					<div className=" flex flex-col lg:items-start items-center text-gray-600  dark:text-gray-300">
 						<p className="font-normal lg:text-left text-center lg:text-xl md:texl-lg text:md lg:mb-10 mb:8">
 							I'm a MERN stack web developer with a passion for open source.
 							Let's create something extraordinary together!
@@ -97,17 +97,20 @@ export default function Hero() {
 					<div>
 						<HeroButton2>
 							<SiHashnode className="inline mr-4 " />
-							Blogs
+							<a href="https://heismanish.hashnode.dev/" target="blank">
+								Blogs
+							</a>
 						</HeroButton2>
 						<HeroButton>
 							My CV
 							<RxArrowRight className="inline ml-4 " />
 						</HeroButton>
 					</div>
+					{/* social-mobile */}
 					<div className="flex order-last lg:order-first gap-6 self-center justify-evenly lg:hidden ">
-						<VscGithub className="text-2xl text-gray-700 hover:text-gray-900"></VscGithub>
-						<VscTwitter className="text-2xl text-gray-700 hover:text-gray-900"></VscTwitter>
-						<SiLinkedin className="text-2xl text-gray-700 hover:text-gray-900"></SiLinkedin>
+						<VscGithub className="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"></VscGithub>
+						<VscTwitter className="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"></VscTwitter>
+						<SiLinkedin className="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"></SiLinkedin>
 					</div>
 					<div className="animate-bounce absolute bottom-2  lg:bottom-4  lg:left-[50%] lg:-translate-x-[4rem]">
 						<ArrowButton>
@@ -126,7 +129,7 @@ export default function Hero() {
 				</div>
 
 				{/* Animated PFP */}
-				<div className=" bg-home-pfp order-first lg:order-3 lg:w-[360px] lg:h-[360px] w-[300px] h-[300px] bg-cover bg-center bg-no-repeat shadow-pfp self-center justify-self-center  animate-profile__animate "></div>
+				<div className=" bg-home-pfp order-first lg:order-3 lg:w-[360px] lg:h-[360px] w-[300px] h-[300px] bg-cover bg-center bg-no-repeat shadow-pfp dark:shadow-pfpDark self-center justify-self-center  animate-profile__animate "></div>
 			</div>
 		</div>
 	);
