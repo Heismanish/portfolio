@@ -19,7 +19,7 @@ export default {
 			},
 
 			backgroundImage: {
-				"home-pfp": "url('./src/assets/profilePic.jpg')",
+				"home-pfp": "url('./src/assets/profile-pic.png')",
 			},
 			boxShadow: {
 				pfp: "inset 0 0 0 9px rgb(255, 255,255, 0.3)",

@@ -1,6 +1,33 @@
 import React, { useEffect, useState } from "react";
-import photo from "../assets/profilePic.jpg";
-import projectSources from "./projectSources";
+import Expense from "../assets/Expense.jpeg";
+import Socially from "../assets/Socially.png";
+import Quiz from "../assets/quizApp1.jpeg";
+const projectSources = [
+	{
+		name: "Omnifood--Project",
+		image:
+			"https://github.com/Heismanish/Omnifood--Project/blob/master/Screenshots/s1.png?raw=true",
+		demoLink: " https://omnifood-heismanish.netlify.app/",
+	},
+	{
+		name: "ReactApp-ExpenseTracker",
+		image: Expense,
+		demoLink: "https://heismanish.github.io/ReactApp-ExpenseTracker/",
+	},
+	{
+		name: "Pokemon_Quiz_App",
+		image: Quiz,
+		demoLink:
+			" https://github.com/Heismanish/Pokemon_Quiz_App/blob/master/README.md",
+	},
+	{
+		name: "Blog-Socially",
+		image: Socially,
+		demoLink: " https://youtu.be/sQkBZXX9gd4",
+	},
+];
+
+// export default projectSources;
 
 function ProjectCards(props) {
 	const projectData = props.dataArray;

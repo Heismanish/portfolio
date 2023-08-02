@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 function Footer() {
 	return (
-		<footer class="bg-gray-200 mt-6 lg:mt-0 lg:m-0 dark:bg-gray-800">
+		<footer class="bg-gray-200 mt-6 lg:mt-0	 lg:m-0 dark:bg-gray-800">
 			<div class="w-[95%] md:w-full	 mx-auto max-w-screen-xl p-2 sm:flex sm:items-center sm:justify-between">
 				<Link
 					className="flex items-center cursor-pointer"

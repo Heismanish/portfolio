@@ -22,7 +22,7 @@ const projectSources = [
 		name: "Blog-Socially",
 		image:
 			"https://github.com/Heismanish/Omnifood--Project/blob/master/Screenshots/s1.png?raw=true",
-		demoLink: " https://omnifood-heismanish.netlify.app/",
+		demoLink: " https://youtu.be/sQkBZXX9gd4",
 	},
 ];
 

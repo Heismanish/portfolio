@@ -129,7 +129,7 @@ export default function Hero() {
 				</div>
 
 				{/* Animated PFP */}
-				<div className=" bg-home-pfp order-first lg:order-3 lg:w-[360px] lg:h-[360px] w-[300px] h-[300px] bg-cover bg-center bg-no-repeat shadow-pfp dark:shadow-pfpDark self-center justify-self-center  animate-profile__animate "></div>
+				<div className=" bg-home-pfp order-first lg:order-3 grayscale lg:w-[360px] lg:h-[360px] w-[300px] h-[300px] bg-cover bg-center bg-no-repeat shadow-pfp dark:shadow-pfpDark self-center justify-self-center  animate-profile__animate "></div>
 			</div>
 		</div>
 	);
