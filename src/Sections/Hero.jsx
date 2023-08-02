@@ -7,8 +7,7 @@ import HeroButton from "../Components/HeroButton";
 import HeroButton2 from "../Components/HeroButton2";
 import ArrowButton from "../Components/ArrowButton";
 import { VscGithub, VscTwitter } from "react-icons/vsc";
-// import Expense from "../assets/Expense.jpeg";
-import profilePic from "../assets/profilePic.png";
+import profilePic from "../assets/profilePic.jpg";
 
 export default function Hero() {
 	return (
