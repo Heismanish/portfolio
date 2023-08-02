@@ -13,7 +13,7 @@ function App() {
 	return (
 		<>
 			<Navbar></Navbar>
-			<div className="  w-screen dark:bg-gray-900">
+			<div className=" w-screen dark:bg-gray-900">
 				<Hero></Hero>
 				<About></About>
 				<Blogs></Blogs>

@@ -14,8 +14,6 @@ function ContactForm() {
 	const form = useRef();
 
 	const sendEmail = (e) => {
-		e.preventDefault();
-		// console.log(e);
 		emailjs
 			.sendForm(
 				"service_mvewp0g",

@@ -8,18 +8,13 @@ export default {
 				"hero-layout": "80px repeat(2, 1fr ) ",
 				"project-layout": "repeat(3, 1fr ) ",
 			},
-			// gridTemplateColumns: {
-			// 	// Complex site-specific row configuration
-			// 	"hero-layout-mobile": "160px 1fr ",
-			// },
 			gridTemplateRows: {
-				// Complex site-specific row configuration
 				"hero-layout-mobile-row": " 1fr minmax(0,1fr) 1rem ",
 				"project-row": "1fr 1fr",
 			},
 
 			backgroundImage: {
-				"home-pfp": "url('./src/assets/profile-pic.png')",
+				// "home-pfp": "url('./src/assets/profile-pic.png')",
 			},
 			boxShadow: {
 				pfp: "inset 0 0 0 9px rgb(255, 255,255, 0.3)",

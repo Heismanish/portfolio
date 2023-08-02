@@ -12,14 +12,23 @@ export default function Hero() {
 	return (
 		<div
 			id="#"
-			className="flex gap-16  lg:mt-0 h-screen w-[95%] md:w-[85%] max-w-screen-2xl  mx-auto relative "
+			className="flex gap-16  lg:mt-0 h-screen w-[95%] md:w-[85%] max-w-screen  mx-auto relative "
 		>
 			<div className="grid lg:grid-cols-hero-layout gap-4 lg:gap-12 grid-cols-1 ">
 				{/* Socials - desktop */}
 				<div className=" hidden lg:flex order-last lg:order-first lg:flex-col lg:gap-6 self-center justify-evenly ">
-					<VscGithub className="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"></VscGithub>
-					<VscTwitter className="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"></VscTwitter>
-					<SiLinkedin className="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"></SiLinkedin>
+					<a href="https://github.com/Heismanish" target="_blank">
+						<VscGithub className="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"></VscGithub>
+					</a>
+					<a href="https://twitter.com/_heismanish" target="_blank">
+						<VscTwitter className="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"></VscTwitter>
+					</a>
+					<a
+						href="https://www.linkedin.com/in/manish-kumar-gupta-47878320b/"
+						target="_blank"
+					>
+						<SiLinkedin className="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"></SiLinkedin>
+					</a>
 				</div>
 				{/* heading */}
 				<div className="flex flex-col lg:items-start items-center shrink gap-12 lg:self-center pr-6  order-2 ">
@@ -97,20 +106,34 @@ export default function Hero() {
 					<div>
 						<HeroButton2>
 							<SiHashnode className="inline mr-4 " />
-							<a href="https://heismanish.hashnode.dev/" target="blank">
+							<a href="https://heismanish.hashnode.dev//" target="blank">
 								Blogs
 							</a>
 						</HeroButton2>
 						<HeroButton>
-							My CV
+							<a
+								href="https://drive.google.com/file/d/1SmRfuxh1qEiEN0ly0StS6lHjbK03-HY7/view "
+								target="blank"
+							>
+								My CV
+							</a>
 							<RxArrowRight className="inline ml-4 " />
 						</HeroButton>
 					</div>
 					{/* social-mobile */}
 					<div className="flex order-last lg:order-first gap-6 self-center justify-evenly lg:hidden ">
-						<VscGithub className="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"></VscGithub>
-						<VscTwitter className="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"></VscTwitter>
-						<SiLinkedin className="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"></SiLinkedin>
+						<a href="https://github.com/Heismanish" target="_blank">
+							<VscGithub className="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"></VscGithub>
+						</a>
+						<a href="https://twitter.com/_heismanish" target="_blank">
+							<VscTwitter className="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"></VscTwitter>
+						</a>
+						<a
+							href="https://www.linkedin.com/in/manish-kumar-gupta-47878320b/"
+							target="_blank"
+						>
+							<SiLinkedin className="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"></SiLinkedin>
+						</a>
 					</div>
 					<div className="animate-bounce absolute bottom-2  lg:bottom-4  lg:left-[50%] lg:-translate-x-[4rem]">
 						<ArrowButton>
@@ -129,7 +152,7 @@ export default function Hero() {
 				</div>
 
 				{/* Animated PFP */}
-				<div className=" bg-home-pfp order-first lg:order-3 grayscale lg:w-[360px] lg:h-[360px] w-[300px] h-[300px] bg-cover bg-center bg-no-repeat shadow-pfp dark:shadow-pfpDark self-center justify-self-center  animate-profile__animate "></div>
+				<div className=" bg-[url('./src/assets/profile-pic.png')] order-first lg:order-3 grayscale lg:w-[360px] lg:h-[360px] w-[300px] h-[300px] bg-cover bg-center bg-no-repeat shadow-pfp dark:shadow-pfpDark self-center justify-self-center  animate-profile__animate "></div>
 			</div>
 		</div>
 	);
