@@ -31,7 +31,6 @@ const projectSources = [
 
 function ProjectCards(props) {
 	const projectData = props.dataArray;
-	console.log(projectData);
 
 	return (
 		<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-project-layout grid-rows-project-row h-[100%] gap-x-2 gap-y-3  place-content-center 	 ">
