@@ -7,6 +7,8 @@ import HeroButton from "../Components/HeroButton";
 import HeroButton2 from "../Components/HeroButton2";
 import ArrowButton from "../Components/ArrowButton";
 import { VscGithub, VscTwitter } from "react-icons/vsc";
+// import Expense from "../assets/Expense.jpeg";
+import profilePic from "../assets/profilePic.png";
 
 export default function Hero() {
 	return (
@@ -152,7 +154,10 @@ export default function Hero() {
 				</div>
 
 				{/* Animated PFP */}
-				<div className="bg-[url(./src/assets/profilePic.png)] order-first lg:order-3 grayscale lg:w-[360px] lg:h-[360px] w-[300px] h-[300px] bg-cover bg-center bg-no-repeat shadow-pfp dark:shadow-pfpDark self-center justify-self-center  animate-profile__animate "></div>
+				<div
+					style={{ backgroundImage: `url(${profilePic})` }}
+					className="order-first lg:order-3 grayscale lg:w-[360px] lg:h-[360px] w-[300px] h-[300px] bg-cover bg-center bg-no-repeat shadow-pfp dark:shadow-pfpDark self-center justify-self-center  animate-profile__animate "
+				></div>
 			</div>
 		</div>
 	);
