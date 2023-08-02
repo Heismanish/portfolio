@@ -88,7 +88,7 @@ export default function Blogs() {
 						</div>
 					))
 				) : (
-					<p>Loading...</p>
+					<p className="text-3xl text-gray-500 font-medium">Loading...</p>
 				)}
 			</div>
 		</div>

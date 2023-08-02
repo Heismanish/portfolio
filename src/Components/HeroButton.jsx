@@ -11,7 +11,7 @@ function HeroButton(props) {
 		// </button>
 		<button
 			type="button"
-			class="text-gray-900 transition ease-out duration-300 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg py-3 px-4 mr-2 mb-2 text-lg  dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+			className="text-gray-900 transition ease-out duration-300 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg py-3 px-4 mr-2 mb-2 text-lg  dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
 		>
 			{props.children}
 		</button>

@@ -262,7 +262,7 @@ export default function Navbar() {
 					<ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border  border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 shadow-md md:shadow-none">
 						<li>
 							<Link
-								className=" transition ease-linear duration-100 hover:bg-gray-200 dark:hover:bg-opacity-70 hover:text-gray-800  cursor-pointer block py-2 pl-3 pr-4 text-gray-900 bg-gray-100 dark:bg-gray-800 rounded md:bg-transparent md:text-gray-700 md:p-0 dark:text-white md:dark:text-gray-500"
+								className=" transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit dark:hover:bg-opacity-70 md:hover:text-black dark:md:hover:text-gray-300  cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100 dark:bg-gray-800 rounded md:bg-transparent md:text-gray-700 md:p-0 dark:text-white md:dark:text-gray-500"
 								activeClass="active"
 								to="#"
 								spy={true}
@@ -275,7 +275,7 @@ export default function Navbar() {
 						</li>
 						<li>
 							<Link
-								className=" transition ease-linear duration-100 hover:bg-gray-200 dark:hover:bg-opacity-70 hover:text-gray-800  cursor-pointer block py-2 pl-3 pr-4 text-gray-900 bg-gray-100 dark:bg-gray-800 rounded md:bg-transparent md:text-gray-700 md:p-0 dark:text-white md:dark:text-gray-500"
+								className=" transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit dark:hover:bg-opacity-70 md:hover:text-black dark:md:hover:text-gray-300  cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100 dark:bg-gray-800 rounded md:bg-transparent md:text-gray-700 md:p-0 dark:text-white md:dark:text-gray-500"
 								activeClass="active"
 								to="about"
 								spy={true}
@@ -288,7 +288,7 @@ export default function Navbar() {
 						</li>
 						<li>
 							<Link
-								className=" transition ease-linear duration-100 hover:bg-gray-200 dark:hover:bg-opacity-70 hover:text-gray-800  cursor-pointer block py-2 pl-3 pr-4 text-gray-900 bg-gray-100 dark:bg-gray-800 rounded md:bg-transparent md:text-gray-700 md:p-0 dark:text-white md:dark:text-gray-500"
+								className=" transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit dark:hover:bg-opacity-70 md:hover:text-black dark:md:hover:text-gray-300  cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100 dark:bg-gray-800 rounded md:bg-transparent md:text-gray-700 md:p-0 dark:text-white md:dark:text-gray-500"
 								activeClass="active"
 								to="blog"
 								spy={true}
@@ -301,7 +301,7 @@ export default function Navbar() {
 						</li>
 						<li>
 							<Link
-								className=" transition ease-linear duration-100 hover:bg-gray-200 dark:hover:bg-opacity-70 hover:text-gray-800  cursor-pointer block py-2 pl-3 pr-4 text-gray-900 bg-gray-100 dark:bg-gray-800 rounded md:bg-transparent md:text-gray-700 md:p-0 dark:text-white md:dark:text-gray-500"
+								className=" transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit dark:hover:bg-opacity-70 md:hover:text-black dark:md:hover:text-gray-300  cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100 dark:bg-gray-800 rounded md:bg-transparent md:text-gray-700 md:p-0 dark:text-white md:dark:text-gray-500"
 								activeClass="active"
 								to="project"
 								spy={true}
@@ -314,7 +314,7 @@ export default function Navbar() {
 						</li>
 						<li>
 							<Link
-								className=" transition ease-linear duration-100 hover:bg-gray-200 dark:hover:bg-opacity-70 hover:text-gray-800  cursor-pointer block py-2 pl-3 pr-4 text-gray-900 bg-gray-100 dark:bg-gray-800 rounded md:bg-transparent md:text-gray-700 md:p-0 dark:text-white md:dark:text-gray-500"
+								className=" transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit dark:hover:bg-opacity-70 md:hover:text-black dark:md:hover:text-gray-300  cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100 dark:bg-gray-800 rounded md:bg-transparent md:text-gray-700 md:p-0 dark:text-white md:dark:text-gray-500"
 								activeClass="active"
 								to="contact"
 								spy={true}
