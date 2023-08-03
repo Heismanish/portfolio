@@ -36,7 +36,7 @@ export default function Projects() {
 	return (
 		<div
 			id="project"
-			className=" h-auto md:h-screen max-w-[80%] mx-auto dark:bg-gray-900 text-center"
+			className="h-auto max-w-[80%] mx-auto dark:bg-gray-900 text-center"
 		>
 			<h1 className="text-4xl  font-medium mb-12 text-gray-950 dark:text-gray-300  ">
 				Projects

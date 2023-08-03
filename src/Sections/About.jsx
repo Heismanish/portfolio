@@ -19,7 +19,7 @@ export default function () {
 	return (
 		<div
 			id="about"
-			className="grid shrink  h-auto w-[95%] md:w-[85%] sm:h-screen max-w-[80%] mx-auto "
+			className="grid shrink  h-auto w-[95%] md:w-[85%] lg:h-screen mb-16 max-w-[80%] mx-auto "
 		>
 			{/* introduction section */}
 			<blockquote className=" flex flex-col justify-between max-w-2xl mx-auto mb-1 text-gray-500  dark:text-gray-400">

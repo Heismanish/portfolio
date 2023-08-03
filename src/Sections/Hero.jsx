@@ -13,7 +13,7 @@ export default function Hero() {
 	return (
 		<div
 			id="#"
-			className="flex gap-16  lg:mt-0 h-screen w-[95%] md:w-[85%] max-w-screen  mx-auto relative "
+			className="flex gap-16 md:h-screen lg:my-0 my-20  h-auto w-[95%] md:w-[85%] max-w-screen  mx-auto relative "
 		>
 			<div className="grid lg:grid-cols-hero-layout gap-4 lg:gap-12 grid-cols-1 ">
 				{/* Socials - desktop */}

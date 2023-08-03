@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -11,35 +11,52 @@ const schema = yup.object().shape({
 });
 
 function ContactForm() {
+	const [sent, setSent] = useState(false);
 	const form = useRef();
 
-	const sendEmail = (e) => {
-		emailjs
-			.sendForm(
-				"service_mvewp0g",
-				"template_pmhqi7s",
-				form.current,
-				"Gw3li_PZC-Hu5Vqp6"
-			)
-			.then(
-				(result) => {
-					console.log(result.text);
-				},
-				(error) => {
-					console.log(error.text);
-				}
-			);
+	const afterSendig = () => {
+		setSent(true);
+		setTimeout(() => setSent(false), 3000);
 	};
+	const sendEmail = (e) => {
+		try {
+			emailjs
+				.sendForm(
+					"service_mvewp0g",
+					"template_pmhqi7s",
+					form.current,
+					"Gw3li_PZC-Hu5Vqp6"
+				)
+				.then(
+					(result) => {
+						console.log(result.text);
+						afterSendig();
+					},
+					(error) => {
+						console.log(error.text);
+					}
+				);
+		} catch (error) {
+			console.log(error.message());
+		}
+	};
+
 	const {
 		register,
 		handleSubmit,
+		reset,
 		formState: { errors },
 	} = useForm({ resolver: yupResolver(schema) });
+
+	useEffect(() => {
+		reset();
+	}, [sent]);
+
 	return (
 		<form
 			onSubmit={handleSubmit((d) => sendEmail(d))}
 			ref={form}
-			className="flex flex-col justify-evenly h-full gap-6 w-[80%] md:w-full max-w-2xl "
+			className=" flex flex-col justify-evenly h-full gap-6 w-[80%] md:w-full max-w-2xl "
 		>
 			<h1 className="text-center text-2xl font-medium text-gray-950 dark:text-gray-300">
 				Write me your project{" "}
@@ -125,12 +142,23 @@ function ContactForm() {
 					{...register("message")}
 				></textarea>
 			</div>
-			<button
-				type="submit"
-				className="text-gray-900 max-w-[200px] transition ease-out duration-300 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg py-3 px-4 mr-2 mb-2 text-lg  dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-			>
-				Send
-			</button>
+			<div className="flex flex-row  items-center gap-4">
+				<button
+					type="submit"
+					className=" text-gray-900 max-w-[200px] transition ease-out duration-300 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg py-3 px-4 mr-2 mb-2 text-lg  dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+				>
+					Send
+				</button>{" "}
+				<p
+					className={
+						sent
+							? " transition-all ease-out text-base text-white rounded-xl bg-green-400 dark:bg-opacity-60 px-3 py-1"
+							: "hidden"
+					}
+				>
+					Email Sent
+				</p>
+			</div>
 		</form>
 	);
 }

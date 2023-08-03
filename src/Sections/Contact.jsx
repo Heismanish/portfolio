@@ -9,7 +9,7 @@ export default function Contact() {
 	return (
 		<div
 			id="contact"
-			className="flex items-center flex-col pt-10 md:h-screen h-auto w-[100%] md:w-[85%] mx-auto dark:bg-gray-900 "
+			className="flex items-center flex-col pt-10 lg:h-screen h-auto w-[100%] md:w-[85%] mx-auto dark:bg-gray-900 "
 		>
 			{/* Headings */}
 			<div className="md:mb-6">
