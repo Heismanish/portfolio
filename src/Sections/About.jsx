@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "../Components/Card";
 import { DiHtml5, DiCss3, DiJsBadge, DiReact } from "react-icons/di";
 import {
@@ -11,11 +10,11 @@ import {
 	SiKotlin,
 	SiVercel,
 } from "react-icons/si";
-import { BsGit, BsGithub } from "react-icons/bs";
+import { BsGit } from "react-icons/bs";
 import { FaNodeJs, FaJava } from "react-icons/fa";
 import { VscGithub } from "react-icons/vsc";
 
-export default function () {
+const About = function () {
 	return (
 		<div
 			id="about"
@@ -27,8 +26,8 @@ export default function () {
 					About Me{" "}
 				</h3>
 				<p className="mb-6 text-center">
-					I'm a MERN stack web developer with a passion for open source. Let's
-					create something extraordinary together!{" "}
+					I&apos;m a MERN stack web developer with a passion for open source.
+					Let&apos;s create something extraordinary together!{" "}
 				</p>
 				<h1 className="text-4xl mb-4   text-gray-800 dark:text-white text-center font-semibold bg-gradient-to-r from-gray-300 to-gray-950 bg-clip-text text-transparent ">
 					{" "}
@@ -50,7 +49,7 @@ export default function () {
 						Heismanish
 					</span>
 				</a> */}
-					<ul role="list" class=" flex flex-col space-y-4 my-3 ">
+					<ul role="list" className=" flex flex-col space-y-4 my-3 ">
 						<li className="flex space-x-2 ">
 							<DiHtml5 className="text-2xl dark:text-gray-300 text-gray-700"></DiHtml5>
 							<span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
@@ -165,4 +164,6 @@ export default function () {
 			</div>
 		</div>
 	);
-}
+};
+
+export default About;

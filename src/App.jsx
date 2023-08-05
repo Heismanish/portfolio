@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Hero from "./Sections/Hero";
@@ -13,7 +11,7 @@ function App() {
 	return (
 		<>
 			<Navbar></Navbar>
-			<div className=" w-screen dark:bg-gray-900">
+			<div className="bg-gray-100 dark:bg-gray-900 ">
 				<Hero></Hero>
 				<About></About>
 				<Blogs></Blogs>

@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ProjectCards from "../Components/ProjectCards";
 import axios from "axios";
 
 export default function Projects() {
 	const [fetchedData, setFetchedData] = useState([]);
 	const [dataArray, setDataArray] = useState([]);
+	// eslint-disable-next-line no-unused-vars
 	const [error, setError] = useState("");
 	const projectName = [
 		"ReactApp-ExpenseTracker",
@@ -20,8 +21,7 @@ export default function Projects() {
 			);
 			setFetchedData(res.data);
 		} catch (error) {
-			setError("Error fetching data");
-			console.log(error);
+			setError(error);
 		}
 	};
 	useEffect(() => {}, [fetchedData]);

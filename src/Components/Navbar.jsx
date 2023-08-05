@@ -1,7 +1,7 @@
-import { React, useState, useRef, useEffect } from "react";
+import { useRef } from "react";
 import { Link } from "react-scroll";
-import githubLogo from "../assets/github.png";
-import githubDarkLogo from "../assets/githubDark.png";
+// import githubLogo from "../assets/github.png";
+// import githubDarkLogo from "../assets/githubDark.png";
 
 export default function Navbar() {
 	const navToggle = useRef();
@@ -14,8 +14,14 @@ export default function Navbar() {
 	// const [isDarkTheme, setIsDarkTheme] = useState(getCurrentTheme());
 
 	return (
-		<nav className="fixed top-0 left-0 right-0 z-10 h-16 px-2 bg-white border-gray-200 dark:bg-gray-900 shadow-sm ">
-			<div className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto p-4">
+		<nav
+			//  className="fixed top-0 left-0 right-0 z-10 h-16 px-2 bg-white border-gray-200 dark:bg-gray-900 shadow-sm "
+			className=" py-4 md:py-6 h-16 px-4 md:px-2 bg-white border-gray-200 dark:bg-gray-900 shadow-sm"
+		>
+			<div
+				// className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto p-4"
+				className="container mx-auto flex flex-wrap justify-between items-center"
+			>
 				<Link
 					className="flex items-center cursor-pointer"
 					activeClass="active"
@@ -35,7 +41,7 @@ export default function Navbar() {
 					}}
 					// data-collapse-toggle="navbar-default"
 					type="button"
-					class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+					className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
 					// aria-controls="navbar-default"
 					aria-expanded="false"
 				>
@@ -50,9 +56,9 @@ export default function Navbar() {
 						cursor
 						<path
 							stroke="currentColor"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							strokeWidth="2"
 							d="M1 1h15M1 7h15M1 13h15"
 						/>
 					</svg>
