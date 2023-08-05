@@ -1,8 +1,69 @@
-import React, { useEffect, useRef, useState } from "react";
-import * as yup from "yup";
+// import { useEffect, useRef, useState } from "react";
+// import * as yup from "yup";
+// import { useForm } from "react-hook-form";
+// import { yupResolver } from "@hookform/resolvers/yup";
+// import emailjs from "@emailjs/browser";
+
+// const schema = yup.object().shape({
+// 	name: yup.string().required("Please enter a valid name"),
+// 	email: yup.string().email().required("Please enter a valid email."),
+// 	message: yup.string().required("This field cannot be empty"),
+// });
+
+// function ContactForm() {
+// 	const [sent, setSent] = useState(false);
+// 	const form = useRef();
+
+// 	const afterSendig = () => {
+// 		setSent(true);
+// 		setTimeout(() => setSent(false), 3000);
+// 	};
+// 	const sendEmail = (e) => {
+// 		try {
+// 			emailjs
+// 				.sendForm(
+// 					"service_mvewp0g",
+// 					"template_pmhqi7s",
+// 					form.current,
+// 					"Gw3li_PZC-Hu5Vqp6"
+// 				)
+// 				.then(
+// 					(result) => {
+// 						console.log(result.text);
+// 						afterSendig();
+// 					},
+// 					(error) => {
+// 						console.log(error.text);
+// 					}
+// 				);
+// 		} catch (error) {
+// 			console.log(error.message());
+// 		}
+// 	};
+
+// 	const {
+// 		register,
+// 		handleSubmit,
+// 		reset,
+// 		formState: { errors },
+// 	} = useForm({ resolver: yupResolver(schema) });
+
+// 	useEffect(() => {
+// 		reset();
+// 	}, [sent]);
+
+// 	return (
+
+// 	);
+// }
+
+// export default ContactForm;
+
+import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import emailjs from "@emailjs/browser";
+import * as yup from "yup";
 
 const schema = yup.object().shape({
 	name: yup.string().required("Please enter a valid name"),
@@ -11,34 +72,32 @@ const schema = yup.object().shape({
 });
 
 function ContactForm() {
-	const [sent, setSent] = useState(false);
-	const form = useRef();
+	const [sent, setSent] = React.useState(false);
+	const form = React.useRef();
 
-	const afterSendig = () => {
+	const afterSending = () => {
 		setSent(true);
 		setTimeout(() => setSent(false), 3000);
 	};
+
 	const sendEmail = (e) => {
-		try {
-			emailjs
-				.sendForm(
-					"service_mvewp0g",
-					"template_pmhqi7s",
-					form.current,
-					"Gw3li_PZC-Hu5Vqp6"
-				)
-				.then(
-					(result) => {
-						console.log(result.text);
-						afterSendig();
-					},
-					(error) => {
-						console.log(error.text);
-					}
-				);
-		} catch (error) {
-			console.log(error.message());
-		}
+		e.preventDefault();
+		emailjs
+			.sendForm(
+				"YOUR_SERVICE_ID",
+				"YOUR_TEMPLATE_ID",
+				form.current,
+				"YOUR_USER_ID"
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+					afterSending();
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
 	};
 
 	const {
@@ -46,9 +105,11 @@ function ContactForm() {
 		handleSubmit,
 		reset,
 		formState: { errors },
-	} = useForm({ resolver: yupResolver(schema) });
+	} = useForm({
+		resolver: yupResolver(schema),
+	});
 
-	useEffect(() => {
+	React.useEffect(() => {
 		reset();
 	}, [sent]);
 
@@ -56,14 +117,14 @@ function ContactForm() {
 		<form
 			onSubmit={handleSubmit((d) => sendEmail(d))}
 			ref={form}
-			className=" flex flex-col justify-evenly h-full gap-6 w-[80%] md:w-full max-w-2xl "
+			className=" flex flex-col align-middle justify-evenly h-full gap-6 w-[80%] md:w-full max-w-2xl "
 		>
 			<h1 className="text-center text-2xl font-medium text-gray-950 dark:text-gray-300">
 				Write me your project{" "}
 			</h1>
 			<div className="mb-6">
 				<label
-					for="success"
+					htmlFor="success"
 					className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-500"
 				>
 					Your name
@@ -78,7 +139,7 @@ function ContactForm() {
 				<input
 					type="text"
 					id="success"
-					class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+					className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 					placeholder="Robert J. Oppenheimer"
 					{...register("name")}
 					required
@@ -91,7 +152,7 @@ function ContactForm() {
 			</div>
 			<div>
 				<label
-					for="input-group-1"
+					htmlFor="input-group-1"
 					className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
 				>
 					Your Email
@@ -128,7 +189,7 @@ function ContactForm() {
 			</div>
 			<div>
 				<label
-					for="message"
+					htmlFor="message"
 					className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
 				>
 					Your Project

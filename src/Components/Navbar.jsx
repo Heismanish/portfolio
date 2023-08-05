@@ -14,14 +14,8 @@ export default function Navbar() {
 	// const [isDarkTheme, setIsDarkTheme] = useState(getCurrentTheme());
 
 	return (
-		<nav
-			//  className="fixed top-0 left-0 right-0 z-10 h-16 px-2 bg-white border-gray-200 dark:bg-gray-900 shadow-sm "
-			className=" py-4 md:py-6 h-16 px-4 md:px-2 bg-white border-gray-200 dark:bg-gray-900 shadow-sm"
-		>
-			<div
-				// className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto p-4"
-				className="container mx-auto flex flex-wrap justify-between items-center"
-			>
+		<nav className=" fixed top-0 left-0 right-0 z-10 py-4 md:py-6 h-16 px-4 md:px-2 bg-white border-gray-200 dark:bg-gray-900 shadow-sm">
+			<div className="container mx-auto flex flex-wrap justify-between items-center">
 				<Link
 					className="flex items-center cursor-pointer"
 					activeClass="active"
