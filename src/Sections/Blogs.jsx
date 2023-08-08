@@ -43,9 +43,9 @@ export default function Blogs() {
 	return (
 		<div
 			id="blog"
-			className=" h-auto max-w-[80%] mx-auto dark:bg-gray-900 text-center "
+			className=" h-auto max-w-[80%] mx-auto md:h-screen dark:bg-gray-900 text-center "
 		>
-			<h3 className="text-4xl mb-8  lg:text-4xl   font-medium lg:font-[500] text-gray-700 dark:text-gray-500 text-center">
+			<h3 className="text-4xl mb-8  lg:text-4xl   font-semibold  text-gray-700 dark:text-gray-300 text-center">
 				Blogs
 			</h3>
 			<div className="mb-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-project-layout grid-rows-project-row  gap-x-2 gap-y-3  place-content-center 	 ">

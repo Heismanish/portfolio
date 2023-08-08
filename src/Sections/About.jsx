@@ -21,8 +21,8 @@ const About = function () {
 			className="grid shrink  h-auto w-[95%] md:w-[85%] lg:h-screen mb-16 max-w-[80%] mx-auto "
 		>
 			{/* introduction section */}
-			<blockquote className=" flex flex-col justify-between max-w-2xl mx-auto mb-1 text-gray-500  dark:text-gray-400">
-				<h3 className="text-2xl my-2  lg:text-4xl  font-medium lg:font-[500] text-gray-700 dark:text-gray-500 text-center">
+			<blockquote className=" flex flex-col justify-between gap-5 md:gap-1 max-w-2xl mx-auto text-gray-500  dark:text-gray-400">
+				<h3 className="text-4xl my-2 font-semibold  text-gray-700 dark:text-gray-300 text-center">
 					About Me{" "}
 				</h3>
 				<p className="mb-6 text-center">

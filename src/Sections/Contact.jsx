@@ -8,7 +8,7 @@ export default function Contact() {
 	return (
 		<div
 			id="contact"
-			className="flex flex-col items-center justify-center py-10 lg:h-screen h-auto  mx-auto dark:bg-gray-900 gap-8	 "
+			className="flex flex-col items-center justify-evenly lg:h-screen h-auto  mx-auto dark:bg-gray-900 gap-8	 "
 		>
 			{/* Headings */}
 			{/* <div className="md:mb-6">
@@ -81,7 +81,7 @@ export default function Contact() {
 				</section>
 			</div>{" "}
 			*/}
-			<div className="mb-6 text-center">
+			<div className="mb-6 text-center ">
 				<h1 className="text-4xl font-semibold text-gray-950 dark:text-gray-300">
 					Get in Touch
 				</h1>
