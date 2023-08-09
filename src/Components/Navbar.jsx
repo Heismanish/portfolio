@@ -5,7 +5,6 @@ import { Link } from "react-scroll";
 
 export default function Navbar() {
 	const navToggle = useRef();
-	// console.log(navToggle.current);
 
 	// const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 	// const hamRef = useRef();
@@ -13,6 +12,9 @@ export default function Navbar() {
 	// 	window.matchMedia("(prefers-color-scheme: dark)").matches;
 	// const [isDarkTheme, setIsDarkTheme] = useState(getCurrentTheme());
 
+	const navToggleHandler = () => {
+		navToggle.current.classList.toggle("hidden");
+	};
 	return (
 		<nav className=" fixed top-0 left-0 right-0 z-10 py-4 md:py-6 h-16 px-4 md:px-2 bg-white border-gray-200 dark:bg-gray-900 shadow-sm">
 			<div className="container mx-auto flex flex-wrap justify-between items-center">
@@ -30,9 +32,7 @@ export default function Navbar() {
 					</span>{" "}
 				</Link>
 				<button
-					onClick={() => {
-						navToggle.current.classList.toggle("hidden");
-					}}
+					onClick={navToggleHandler}
 					data-collapse-toggle="navbar-default"
 					type="button"
 					className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -72,19 +72,23 @@ export default function Navbar() {
 								smooth={true}
 								offset={-70}
 								duration={500}
+								onClick={navToggleHandler}
 							>
 								Home
 							</Link>
 						</li>
 						<li>
 							<Link
-								className=" transition ease-linear duration-100 hover:bg-gray-200 md:hover:bg-inherit dark:hover:bg-opacity-70 md:hover:text-black dark:md:hover:text-gray-300  cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100 dark:bg-gray-800 rounded md:bg-transparent md:text-gray-700 md:p-0 dark:text-white md:dark:text-gray-500"
+								className={
+									" transition ease-linear duration-400 hover:bg-gray-200 md:hover:bg-inherit dark:hover:bg-opacity-70 md:hover:text-black dark:md:hover:text-gray-300  cursor-pointer block py-2 pl-3 pr-4 text-gray-700 bg-gray-100 dark:bg-gray-800 rounded md:bg-transparent md:text-gray-700 md:p-0 dark:text-white md:dark:text-gray-500"
+								}
 								activeClass="active"
 								to="about"
 								spy={true}
 								smooth={true}
 								offset={-70}
 								duration={500}
+								onClick={navToggleHandler}
 							>
 								About
 							</Link>
@@ -98,6 +102,7 @@ export default function Navbar() {
 								smooth={true}
 								offset={-70}
 								duration={500}
+								onClick={navToggleHandler}
 							>
 								Blogs
 							</Link>
@@ -111,6 +116,7 @@ export default function Navbar() {
 								smooth={true}
 								offset={-70}
 								duration={500}
+								onClick={navToggleHandler}
 							>
 								Projects
 							</Link>
@@ -124,6 +130,7 @@ export default function Navbar() {
 								smooth={true}
 								offset={-70}
 								duration={500}
+								onClick={navToggleHandler}
 							>
 								Contact
 							</Link>

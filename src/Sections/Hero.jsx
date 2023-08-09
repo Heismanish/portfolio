@@ -13,7 +13,7 @@ export default function Hero() {
 		<div
 			id="#"
 			// className="flex gap-16 md:h-screen lg:my-0 my-20  h-auto w-[95%] md:w-[85%] max-w-screen  mx-auto relative "
-			className="min-h-screen gap-16 flex items-center justify-center w-full "
+			className="h-auto md:h-screen my-16 gap-18 md:gap-16 flex items-center justify-center w-full "
 		>
 			<div className="w-90vw mx-auto max-w-screen-lg	">
 				<div className="grid lg:grid-cols-hero-layout gap-4 lg:gap-12 grid-cols-1 ">
