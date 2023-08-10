@@ -29,7 +29,7 @@ const About = function () {
 					I&apos;m a MERN stack web developer with a passion for open source.
 					Let&apos;s create something extraordinary together!{" "}
 				</p>
-				<h1 className="text-4xl mb-4   text-gray-800 dark:text-white text-center font-semibold bg-gradient-to-r from-gray-300 to-gray-950 bg-clip-text text-transparent ">
+				<h1 className="text-4xl mb-8   text-gray-800 dark:text-white text-center font-semibold bg-gradient-to-r from-gray-300 to-gray-950 bg-clip-text text-transparent ">
 					{" "}
 					My Tech Stack
 				</h1>

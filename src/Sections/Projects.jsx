@@ -36,10 +36,9 @@ export default function Projects() {
 	return (
 		<div
 			id="project"
-			className="container flex flex-col gap-8 h-auto max-w-[80%] mx-auto lg:h-screen dark:bg-gray-900 text-center"
-			// className="grid shrink  h-auto w-[95%] md:w-[85%] lg:h-full mb-16 max-w-[80%] mx-auto "
+			className="container flex flex-col gap-8 h-auto max-w-screen-xl mx-auto dark:bg-gray-900 text-center p-4 md:p-8"
 		>
-			<h1 className="text-4xl  font-semibold  text-gray-950 dark:text-gray-300  ">
+			<h1 className="text-4xl font-semibold text-gray-950 dark:text-gray-300">
 				Projects
 			</h1>
 			<div className="mx-auto">

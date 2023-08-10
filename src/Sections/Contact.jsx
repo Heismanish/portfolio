@@ -8,7 +8,7 @@ export default function Contact() {
 	return (
 		<div
 			id="contact"
-			className="flex flex-col items-center justify-evenly lg:h-screen h-auto  mx-auto dark:bg-gray-900 gap-8	 "
+			className="flex flex-col items-center justify-evenly lg:h-screen h-auto py-20 lg:py-5   mx-auto dark:bg-gray-900 gap-4	 "
 		>
 			{/* Headings */}
 			{/* <div className="md:mb-6">

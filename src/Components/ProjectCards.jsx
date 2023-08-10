@@ -33,7 +33,10 @@ function ProjectCards(props) {
 	const projectData = props.dataArray;
 
 	return (
-		<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-project-layout grid-rows-project-row h-[100%] gap-x-2 gap-y-3  place-content-center 	 ">
+		<div
+			// className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-wrap"
+			className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-project-layout grid-rows-project-row gap-x-2 gap-y-3  place-content-center 	 "
+		>
 			{projectData.map((element) => {
 				const projectImage = projectSources.find(
 					(item) => item.name === element.name
@@ -44,7 +47,8 @@ function ProjectCards(props) {
 				return (
 					<div
 						key={element.id}
-						className="max-w-sm h-full  cursor-pointer justify-self-center self-center bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 "
+						className="max-w-sm flex flex-wrap f-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+						// className="max-w-sm h-full  cursor-pointer justify-self-center self-center bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 "
 					>
 						<img
 							className="rounded-t-lg "
@@ -70,13 +74,13 @@ function ProjectCards(props) {
 
 							<button
 								type="button"
-								class="text-white text-lg border border-gray-950 bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg  px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+								className="text-white text-lg border border-gray-950 bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg  px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
 							>
 								<a href={element.html_url}>Github</a>
 							</button>
 							<button
 								type="button"
-								class="text-gray-900 text-lg bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg  px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+								className="text-gray-900 text-lg bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg  px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
 							>
 								<a href={projectDemo}>Demo</a>
 								<svg
@@ -88,9 +92,9 @@ function ProjectCards(props) {
 								>
 									<path
 										stroke="currentColor"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
 										d="M1 5h12m0 0L9 1m4 4L9 9"
 									/>
 								</svg>

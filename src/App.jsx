@@ -11,14 +11,14 @@ function App() {
 	return (
 		<>
 			<Navbar></Navbar>
-			<div className="bg-gray-100 dark:bg-gray-900 mb-6  md:mb-0 ">
+			<div className="bg-gray-100 dark:bg-gray-900   ">
 				<Hero></Hero>
 				<About></About>
 				<Blogs></Blogs>
 				<Projects></Projects>
 				<Contact></Contact>
-				<Footer></Footer>
 			</div>
+			<Footer></Footer>
 		</>
 	);
 }
