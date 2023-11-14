@@ -51,7 +51,7 @@ export default function Blogs() {
   return (
     <div
       id="blog"
-      className="md:mb-0 mb-16 container  h-auto max-w-[80%] mx-auto  dark:bg-gray-900 text-center "
+      className="md:mb-0 mb-16 container mt-2 md:mt-4  h-auto max-w-[80%] mx-auto  dark:bg-gray-900 text-center "
     >
       <h3 className="text-4xl mb-8  lg:text-4xl   font-semibold  text-gray-700 dark:text-gray-300 text-center">
         Blogs

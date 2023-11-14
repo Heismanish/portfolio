@@ -33,7 +33,8 @@ const projectSources = [
   {
     id: 4,
     name: "Blog-Socially",
-    description: "kcuh to hai",
+    description:
+      "A micro-blogging web app written in typescript and build with react and firebase.",
     image: Socially,
     code: "https://github.com/Heismanish/Blog-Socially",
     demoLink: " https://youtu.be/sQkBZXX9gd4",
